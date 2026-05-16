@@ -4,9 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Support - Huanelia Studio</title>
+
   <style>
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -19,14 +24,18 @@
 
     .container {
       width: 100%;
-      max-width: 860px;
+      max-width: 1060px;
       margin: 0 auto;
       padding: 0 24px;
     }
 
     header {
-      background: white;
+      background: rgba(255, 255, 255, 0.95);
       border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(12px);
     }
 
     .nav {
@@ -61,34 +70,111 @@
       font-weight: 500;
     }
 
-    main {
-      padding: 64px 0;
+    .nav-links a:hover {
+      color: #111827;
     }
 
-    .content {
+    .page-hero {
+      padding: 76px 0 48px;
+      text-align: center;
+      background:
+        radial-gradient(circle at top, rgba(219, 234, 254, 0.85), transparent 40%),
+        linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .page-hero h1 {
+      margin: 0 0 14px;
+      font-size: 48px;
+      line-height: 1.1;
+      color: #0f172a;
+      letter-spacing: -0.04em;
+    }
+
+    .page-hero p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #64748b;
+      font-size: 19px;
+    }
+
+    main {
+      padding: 56px 0 76px;
+      background: #f8fafc;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .main-card,
+    .side-card {
       background: white;
       border: 1px solid #e5e7eb;
-      border-radius: 20px;
-      padding: 38px;
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+      border-radius: 24px;
+      box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
     }
 
-    h1 {
-      margin-top: 0;
-      font-size: 38px;
-      letter-spacing: -0.03em;
-      color: #0f172a;
+    .main-card {
+      padding: 38px;
+    }
+
+    .side-card {
+      padding: 30px;
     }
 
     h2 {
-      margin-top: 32px;
+      margin: 0 0 16px;
       color: #0f172a;
-      font-size: 22px;
+      font-size: 28px;
+      letter-spacing: -0.03em;
+    }
+
+    h3 {
+      margin: 30px 0 12px;
+      color: #0f172a;
+      font-size: 21px;
     }
 
     p {
       color: #475569;
       font-size: 16px;
+      margin: 0 0 16px;
+    }
+
+    .contact-box {
+      margin: 24px 0;
+      padding: 22px;
+      border-radius: 18px;
+      background: #eef2ff;
+      border: 1px solid #e0e7ff;
+    }
+
+    .contact-box p {
+      margin-bottom: 10px;
+    }
+
+    .list {
+      margin: 16px 0 0;
+      padding-left: 20px;
+      color: #475569;
+    }
+
+    .list li {
+      margin-bottom: 8px;
     }
 
     a {
@@ -97,27 +183,39 @@
       font-weight: 600;
     }
 
-    .support-box {
-      margin-top: 24px;
-      padding: 22px;
-      border-radius: 16px;
-      background: #f8fafc;
-      border: 1px solid #e5e7eb;
+    .small-note {
+      font-size: 14px;
+      color: #64748b;
     }
 
     footer {
-      padding: 28px 0 38px;
+      padding: 32px 0 42px;
       border-top: 1px solid #e5e7eb;
       color: #64748b;
       font-size: 14px;
       background: white;
     }
 
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .footer-links a {
+      color: #475569;
+      text-decoration: none;
+      margin-right: 18px;
+      font-weight: 500;
+    }
+
     @media (max-width: 768px) {
       .nav {
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
+        gap: 14px;
       }
 
       .nav-links a {
@@ -125,7 +223,24 @@
         margin-right: 16px;
       }
 
-      .content {
+      .page-hero {
+        padding: 58px 0 38px;
+      }
+
+      .page-hero h1 {
+        font-size: 38px;
+      }
+
+      .page-hero p {
+        font-size: 17px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .main-card,
+      .side-card {
         padding: 28px;
       }
     }
@@ -150,40 +265,87 @@
     </div>
   </header>
 
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Support</div>
+      <h1>How can we help?</h1>
+      <p>
+        For app support, project questions, business inquiries, or general feedback,
+        please contact Huanelia Studio by email.
+      </p>
+    </div>
+  </section>
+
   <main>
     <div class="container">
-      <div class="content">
-        <h1>Support</h1>
-
-        <p>
-          Need help with a Huanelia Studio app or project? Please contact us by email.
-        </p>
-
-        <div class="support-box">
-          <p>
-            Email:
-            <a href="mailto:huaneliastudio@gmail.com">huaneliastudio@gmail.com</a>
-          </p>
+      <div class="cards">
+        <div class="main-card">
+          <h2>Contact Support</h2>
 
           <p>
-            When contacting support, please include the app or project name, your device model,
-            iOS version, and a short description of the issue.
+            Need help with a Huanelia Studio app or project? Please send us a message
+            and we will review your inquiry.
           </p>
+
+          <div class="contact-box">
+            <p>
+              Email:
+              <a href="mailto:huaneliastudio@gmail.com">huaneliastudio@gmail.com</a>
+            </p>
+            <p class="small-note">
+              This is the official support contact for Huanelia Studio.
+            </p>
+          </div>
+
+          <h3>What to include</h3>
+          <p>
+            To help us understand your issue faster, please include:
+          </p>
+
+          <ul class="list">
+            <li>The app or project name</li>
+            <li>Your device model</li>
+            <li>Your iOS version</li>
+            <li>A short description of the issue or question</li>
+            <li>Screenshots, if helpful</li>
+          </ul>
+
+          <h3>Business Inquiries</h3>
+          <p>
+            For business inquiries, partnerships, or general questions, please contact
+            us using the same email address.
+          </p>
+
+          <p><a href="index.html">Back to Home</a></p>
         </div>
 
-        <h2>Business Inquiries</h2>
-        <p>
-          For business inquiries, partnerships, or general questions, please contact us at the same email address.
-        </p>
+        <aside class="side-card">
+          <h2>Huanelia Studio</h2>
+          <p>
+            We build mobile app projects focused on reflection, productivity,
+            progress tracking, subscription tracking, and everyday organization.
+          </p>
 
-        <p><a href="index.html">Back to Home</a></p>
+          <h3>Current focus</h3>
+          <ul class="list">
+            <li>Voice journaling</li>
+            <li>Subscription tracking</li>
+            <li>Progress tracking</li>
+            <li>Practical productivity tools</li>
+          </ul>
+        </aside>
       </div>
     </div>
   </main>
 
   <footer>
-    <div class="container">
-      © 2026 Huanelia Studio. All rights reserved.
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </div>
+
+      <div>© 2026 Huanelia Studio. All rights reserved.</div>
     </div>
   </footer>
 </body>
