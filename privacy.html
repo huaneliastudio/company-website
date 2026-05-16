@@ -4,9 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - Huanelia Studio</title>
+
   <style>
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -19,14 +24,18 @@
 
     .container {
       width: 100%;
-      max-width: 860px;
+      max-width: 1060px;
       margin: 0 auto;
       padding: 0 24px;
     }
 
     header {
-      background: white;
+      background: rgba(255, 255, 255, 0.95);
       border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(12px);
     }
 
     .nav {
@@ -61,34 +70,111 @@
       font-weight: 500;
     }
 
-    main {
-      padding: 64px 0;
+    .nav-links a:hover {
+      color: #111827;
     }
 
-    .content {
+    .page-hero {
+      padding: 76px 0 48px;
+      text-align: center;
+      background:
+        radial-gradient(circle at top, rgba(219, 234, 254, 0.85), transparent 40%),
+        linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .page-hero h1 {
+      margin: 0 0 14px;
+      font-size: 48px;
+      line-height: 1.1;
+      color: #0f172a;
+      letter-spacing: -0.04em;
+    }
+
+    .page-hero p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #64748b;
+      font-size: 19px;
+    }
+
+    main {
+      padding: 56px 0 76px;
+      background: #f8fafc;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .side-card,
+    .content-card {
       background: white;
       border: 1px solid #e5e7eb;
-      border-radius: 20px;
+      border-radius: 24px;
+      box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+    }
+
+    .side-card {
+      padding: 26px;
+      position: sticky;
+      top: 96px;
+    }
+
+    .side-card h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+      color: #0f172a;
+    }
+
+    .side-card p {
+      margin: 0;
+      color: #64748b;
+      font-size: 15px;
+    }
+
+    .content-card {
       padding: 38px;
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
     }
 
-    h1 {
+    .content-card h2 {
+      margin: 34px 0 12px;
+      color: #0f172a;
+      font-size: 24px;
+      letter-spacing: -0.02em;
+    }
+
+    .content-card h2:first-child {
       margin-top: 0;
-      font-size: 38px;
-      letter-spacing: -0.03em;
-      color: #0f172a;
     }
 
-    h2 {
-      margin-top: 32px;
-      color: #0f172a;
-      font-size: 22px;
-    }
-
-    p {
+    .content-card p {
       color: #475569;
       font-size: 16px;
+      margin: 0 0 16px;
+    }
+
+    .notice {
+      padding: 18px 20px;
+      border-radius: 16px;
+      background: #eef2ff;
+      border: 1px solid #e0e7ff;
+      color: #3730a3;
+      font-weight: 600;
+      margin-bottom: 24px;
     }
 
     a {
@@ -98,18 +184,33 @@
     }
 
     footer {
-      padding: 28px 0 38px;
+      padding: 32px 0 42px;
       border-top: 1px solid #e5e7eb;
       color: #64748b;
       font-size: 14px;
       background: white;
     }
 
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .footer-links a {
+      color: #475569;
+      text-decoration: none;
+      margin-right: 18px;
+      font-weight: 500;
+    }
+
     @media (max-width: 768px) {
       .nav {
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
+        gap: 14px;
       }
 
       .nav-links a {
@@ -117,7 +218,27 @@
         margin-right: 16px;
       }
 
-      .content {
+      .page-hero {
+        padding: 58px 0 38px;
+      }
+
+      .page-hero h1 {
+        font-size: 38px;
+      }
+
+      .page-hero p {
+        font-size: 17px;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .side-card {
+        position: static;
+      }
+
+      .content-card {
         padding: 28px;
       }
     }
@@ -142,57 +263,95 @@
     </div>
   </header>
 
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Privacy Policy</div>
+      <h1>How we handle information</h1>
+      <p>
+        This page explains how Huanelia Studio approaches privacy for its mobile apps,
+        projects, and related services.
+      </p>
+    </div>
+  </section>
+
   <main>
     <div class="container">
-      <div class="content">
-        <h1>Privacy Policy</h1>
-        <p>Last updated: May 17, 2026</p>
+      <div class="content-grid">
+        <aside class="side-card">
+          <h2>Huanelia Studio</h2>
+          <p>
+            Independent software studio based in Singapore, building mobile apps for
+            reflection, productivity, and everyday organization.
+          </p>
+        </aside>
 
-        <p>
-          Huanelia Studio is an independent software studio based in Singapore,
-          developing mobile applications for reflection, productivity, progress tracking,
-          and everyday organization.
-        </p>
+        <div class="content-card">
+          <div class="notice">
+            Last updated: May 17, 2026
+          </div>
 
-        <h2>Information We Collect</h2>
-        <p>
-          Our apps may store user-provided content such as journal entries, progress records,
-          app preferences, or subscription information. Where possible, this information is stored
-          locally on the user's device.
-        </p>
+          <h2>Overview</h2>
+          <p>
+            Huanelia Studio develops mobile applications for reflection, productivity,
+            progress tracking, subscription tracking, and everyday organization.
+          </p>
+          <p>
+            We aim to build products that are useful, respectful of users' time,
+            and mindful of personal information.
+          </p>
 
-        <h2>How We Use Information</h2>
-        <p>
-          Information is used to provide app functionality, improve the user experience,
-          and support features requested by the user.
-        </p>
+          <h2>Information We Collect</h2>
+          <p>
+            Our apps may store user-provided content such as journal entries,
+            progress records, app preferences, subscription details, or other
+            information entered by the user.
+          </p>
+          <p>
+            Where possible, this information is stored locally on the user's device.
+          </p>
 
-        <h2>Data Sharing</h2>
-        <p>
-          We do not sell personal data.
-        </p>
+          <h2>How We Use Information</h2>
+          <p>
+            Information is used to provide app functionality, improve the user
+            experience, and support features requested by the user.
+          </p>
 
-        <h2>Third-Party Services</h2>
-        <p>
-          Some app features may rely on third-party services for functionality such as payments,
-          analytics, cloud services, or artificial intelligence features. Where applicable,
-          these services are used only to support app functionality.
-        </p>
+          <h2>Data Sharing</h2>
+          <p>
+            We do not sell personal data.
+          </p>
+          <p>
+            If an app uses third-party services for features such as payments,
+            analytics, cloud services, or artificial intelligence functionality,
+            those services are used only to support app functionality.
+          </p>
 
-        <h2>Contact</h2>
-        <p>
-          For privacy questions, contact us at
-          <a href="mailto:huaneliastudio@gmail.com">huaneliastudio@gmail.com</a>.
-        </p>
+          <h2>Data Storage</h2>
+          <p>
+            Some app data may be stored locally on the user's device. Future features
+            may use cloud services where required to support app functionality.
+          </p>
 
-        <p><a href="index.html">Back to Home</a></p>
+          <h2>Contact</h2>
+          <p>
+            For privacy questions, contact us at
+            <a href="mailto:huaneliastudio@gmail.com">huaneliastudio@gmail.com</a>.
+          </p>
+
+          <p><a href="index.html">Back to Home</a></p>
+        </div>
       </div>
     </div>
   </main>
 
   <footer>
-    <div class="container">
-      © 2026 Huanelia Studio. All rights reserved.
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </div>
+
+      <div>© 2026 Huanelia Studio. All rights reserved.</div>
     </div>
   </footer>
 </body>
