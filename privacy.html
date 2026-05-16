@@ -5,49 +5,195 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - Huanelia Studio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 48px 20px;
-      line-height: 1.6;
-      color: #222;
+    * {
+      box-sizing: border-box;
     }
-    a { color: #1a5cff; text-decoration: none; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.7;
+      color: #111827;
+      background: #f8fafc;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #111827;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 750;
+    }
+
+    .brand-logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .nav-links a {
+      margin-left: 22px;
+      color: #4b5563;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    main {
+      padding: 64px 0;
+    }
+
+    .content {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 20px;
+      padding: 38px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 38px;
+      letter-spacing: -0.03em;
+      color: #0f172a;
+    }
+
+    h2 {
+      margin-top: 32px;
+      color: #0f172a;
+      font-size: 22px;
+    }
+
+    p {
+      color: #475569;
+      font-size: 16px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      padding: 28px 0 38px;
+      border-top: 1px solid #e5e7eb;
+      color: #64748b;
+      font-size: 14px;
+      background: white;
+    }
+
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .nav-links a {
+        margin-left: 0;
+        margin-right: 16px;
+      }
+
+      .content {
+        padding: 28px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <h1>Privacy Policy</h1>
-  <p>Last updated: May 17, 2026</p>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="logo.png" alt="Huanelia Studio logo" />
+        <span>Huanelia Studio</span>
+      </a>
 
-  <p>
-    Huanelia Studio builds mobile applications for productivity, reflection, and personal tracking.
-  </p>
+      <nav class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#apps">Projects</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <h2>Information We Collect</h2>
-  <p>
-    Our apps may store user-provided content such as journal entries, progress records,
-    app preferences, or subscription information. Where possible, this information is stored
-    locally on the user's device.
-  </p>
+  <main>
+    <div class="container">
+      <div class="content">
+        <h1>Privacy Policy</h1>
+        <p>Last updated: May 17, 2026</p>
 
-  <h2>How We Use Information</h2>
-  <p>
-    Information is used to provide app functionality, improve user experience, and support
-    app features requested by the user.
-  </p>
+        <p>
+          Huanelia Studio is an independent software studio based in Singapore,
+          developing mobile applications for reflection, productivity, progress tracking,
+          and everyday organization.
+        </p>
 
-  <h2>Data Sharing</h2>
-  <p>
-    We do not sell personal data.
-  </p>
+        <h2>Information We Collect</h2>
+        <p>
+          Our apps may store user-provided content such as journal entries, progress records,
+          app preferences, or subscription information. Where possible, this information is stored
+          locally on the user's device.
+        </p>
 
-  <h2>Contact</h2>
-  <p>
-    For privacy questions, contact us at
-    <a href="mailto:ngruoyin@gmail.com">ngruoyin@gmail.com</a>.
-  </p>
+        <h2>How We Use Information</h2>
+        <p>
+          Information is used to provide app functionality, improve the user experience,
+          and support features requested by the user.
+        </p>
 
-  <p><a href="index.html">Back to Home</a></p>
+        <h2>Data Sharing</h2>
+        <p>
+          We do not sell personal data.
+        </p>
+
+        <h2>Third-Party Services</h2>
+        <p>
+          Some app features may rely on third-party services for functionality such as payments,
+          analytics, cloud services, or artificial intelligence features. Where applicable,
+          these services are used only to support app functionality.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          For privacy questions, contact us at
+          <a href="mailto:huaneliastudio@gmail.com">huaneliastudio@gmail.com</a>.
+        </p>
+
+        <p><a href="index.html">Back to Home</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Huanelia Studio. All rights reserved.
+    </div>
+  </footer>
 </body>
 </html>
