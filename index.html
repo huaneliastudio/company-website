@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Huanelia Studio</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -77,17 +78,18 @@
       padding: 96px 0 78px;
       text-align: center;
       background:
-        radial-gradient(circle at top, rgba(219, 234, 254, 0.8), transparent 38%),
+        radial-gradient(circle at top, rgba(219, 234, 254, 0.85), transparent 38%),
         linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
     }
 
     .hero-logo {
-      width: 76px;
-      height: 76px;
-      border-radius: 20px;
+      display: block;
+      width: 82px;
+      height: 82px;
+      border-radius: 24px;
       object-fit: cover;
-      margin-bottom: 24px;
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+      margin: 0 auto 24px;
+      box-shadow: 0 16px 36px rgba(79, 70, 229, 0.18);
     }
 
     .eyebrow {
@@ -159,6 +161,50 @@
       color: #475569;
       font-size: 18px;
       margin: 0;
+    }
+
+    .about-section {
+      background: #ffffff;
+    }
+
+    .about-card {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 34px;
+      align-items: start;
+      padding: 40px;
+      border-radius: 28px;
+      background:
+        linear-gradient(135deg, rgba(238, 242, 255, 0.95), rgba(255, 255, 255, 0.95));
+      border: 1px solid #e0e7ff;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.07);
+    }
+
+    .section-label {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffffff;
+      color: #3730a3;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .about-card h2 {
+      margin-bottom: 0;
+    }
+
+    .about-copy {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .about-text {
+      margin: 0;
+      color: #475569;
+      font-size: 18px;
     }
 
     .cards {
@@ -270,6 +316,15 @@
       section {
         padding: 52px 0;
       }
+
+      .about-card {
+        grid-template-columns: 1fr;
+        padding: 30px;
+      }
+
+      .about-text {
+        font-size: 17px;
+      }
     }
   </style>
 </head>
@@ -295,7 +350,7 @@
   <main>
     <section class="hero">
       <div class="container">
-        <img class="hero-logo" src="logo.png" alt="Huanelia Studio logo" />
+        <img class="hero-logo" src="logo2.png" alt="Huanelia Studio icon" />
 
         <div class="eyebrow">Independent software studio based in Singapore</div>
 
@@ -313,22 +368,34 @@
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="about-section">
       <div class="container">
-        <h2>About Huanelia Studio</h2>
-        <p class="section-text">
-          Huanelia Studio is an independent software studio based in Singapore.
-          We focus on building clean, practical, and user-friendly mobile apps for
-          personal reflection, productivity, progress tracking, and everyday life management.
-          Our goal is to create thoughtful digital tools that feel simple, useful,
-          and respectful of users' time.
-        </p>
+        <div class="about-card">
+          <div>
+            <span class="section-label">About</span>
+            <h2>About Huanelia Studio</h2>
+          </div>
+
+          <div class="about-copy">
+            <p class="about-text">
+              Huanelia Studio is an independent software studio based in Singapore,
+              focused on building clean, practical, and user-friendly mobile apps for
+              reflection, productivity, progress tracking, and everyday life management.
+            </p>
+
+            <p class="about-text">
+              Our goal is to create thoughtful digital tools that feel simple, useful,
+              and respectful of users' time.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="apps" class="alt">
       <div class="container">
         <h2>Projects</h2>
+
         <p class="section-text">
           We are currently developing mobile app projects focused on journaling,
           subscription tracking, progress tracking, and practical tools for everyday productivity.
@@ -368,10 +435,12 @@
     <section id="contact">
       <div class="container">
         <h2>Contact</h2>
+
         <div class="contact-box">
           <p>
             For support, business inquiries, or general questions, please contact us by email.
           </p>
+
           <p>
             Email:
             <a class="inline-link" href="mailto:huaneliastudio@gmail.com">huaneliastudio@gmail.com</a>
@@ -387,6 +456,7 @@
         <a href="privacy.html">Privacy Policy</a>
         <a href="support.html">Support</a>
       </div>
+
       <div>© 2026 Huanelia Studio. All rights reserved.</div>
     </div>
   </footer>
