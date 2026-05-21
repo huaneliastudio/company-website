@@ -97,15 +97,14 @@
       align-items: center;
     }
 
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 16px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: #eef2ff;
-      color: #3730a3;
-      font-size: 14px;
-      font-weight: 650;
+    .app-icon {
+      display: block;
+      width: 82px;
+      height: 82px;
+      border-radius: 22px;
+      object-fit: cover;
+      margin-bottom: 22px;
+      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.14);
     }
 
     .status-tag {
@@ -449,15 +448,6 @@
       .mock-phone {
         min-height: 440px;
       }
-
-      .app-icon {
-        width: 82px;
-        height: 82px;
-        border-radius: 22px;
-        object-fit: cover;
-        margin-bottom: 22px;
-        box-shadow: 0 16px 36px rgba(15, 23, 42, 0.14);
-      }
     }
   </style>
 </head>
@@ -485,7 +475,7 @@
       <div class="container hero-layout">
         <div>
           <img class="app-icon" src="/subtrack/subtrack-icon.png" alt="SubTrack app icon" />
-          
+
           <span class="status-tag">In Development</span>
 
           <h1>SubTrack+</h1>
@@ -591,7 +581,7 @@
           <div class="card">
             <h3>Simple Organization</h3>
             <p>
-              Keep subscriptions organized with clear renewal dates, billing 
+              Keep subscriptions organized with clear renewal dates, billing
               cycles, and spending details.
             </p>
           </div>
