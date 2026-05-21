@@ -84,7 +84,7 @@
     }
 
     .hero {
-      padding: 86px 0 76px;
+      padding: 76px 0 56px;
       background:
         radial-gradient(circle at top, rgba(219, 234, 254, 0.75), transparent 38%),
         linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
@@ -165,23 +165,27 @@
     }
 
     .app-preview-card {
-      background: #050505;
-      border: 1px solid #1f2937;
-      border-radius: 34px;
-      padding: 18px;
-      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.2);
-      max-width: 430px;
+      width: 390px;
+      max-width: 100%;
       margin-left: auto;
+      padding: 13px;
+      border-radius: 38px;
+      background: linear-gradient(180deg, #050505, #111111);
+      border: 1px solid rgba(15, 23, 42, 0.16);
+      box-shadow:
+        0 24px 60px rgba(15, 23, 42, 0.22),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.04);
       overflow: hidden;
     }
 
     .app-screen {
-      min-height: 720px;
-      border-radius: 28px;
+      height: 740px;
+      border-radius: 30px;
       background: #000000;
       color: #ffffff;
-      padding: 26px 20px 28px;
+      padding: 22px 18px 24px;
       overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     .status-bar {
@@ -189,9 +193,9 @@
       justify-content: space-between;
       align-items: center;
       color: #ffffff;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 750;
-      margin-bottom: 28px;
+      margin-bottom: 22px;
     }
 
     .status-icons {
@@ -215,24 +219,13 @@
       border-radius: 999px;
     }
 
-    .signal span:nth-child(1) {
-      height: 5px;
-    }
-
-    .signal span:nth-child(2) {
-      height: 8px;
-    }
-
-    .signal span:nth-child(3) {
-      height: 11px;
-    }
-
-    .signal span:nth-child(4) {
-      height: 14px;
-    }
+    .signal span:nth-child(1) { height: 5px; }
+    .signal span:nth-child(2) { height: 8px; }
+    .signal span:nth-child(3) { height: 11px; }
+    .signal span:nth-child(4) { height: 14px; }
 
     .wifi {
-      font-size: 15px;
+      font-size: 14px;
       line-height: 1;
     }
 
@@ -256,6 +249,7 @@
     }
 
     .battery-fill {
+      display: block;
       width: 16px;
       height: 7px;
       background: #ffffff;
@@ -267,72 +261,72 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 14px;
+      gap: 12px;
       background: #171717;
       border: 1px solid #303030;
       border-radius: 999px;
-      padding: 12px 18px;
-      margin: 0 0 34px;
+      padding: 10px 16px;
+      margin: 0 0 26px;
       color: #f5f5f5;
-      font-size: 19px;
+      font-size: 16px;
       line-height: 1;
     }
 
     .crown {
-      font-size: 26px;
+      font-size: 20px;
       line-height: 1;
       color: #f8fafc;
     }
 
     .plus {
-      font-size: 34px;
+      font-size: 30px;
       line-height: 1;
       font-weight: 300;
     }
 
     .app-title-block h3 {
       margin: 0;
-      font-size: 40px;
+      font-size: 32px;
       line-height: 1;
       letter-spacing: -0.06em;
       color: #ffffff;
     }
 
     .app-title-block p {
-      margin: 14px 0 38px;
+      margin: 12px 0 28px;
       color: #9ca3af;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 500;
     }
 
     .summary-card {
       background: #1f1f1f;
-      border-radius: 28px;
-      padding: 22px;
-      margin-bottom: 42px;
+      border-radius: 24px;
+      padding: 18px;
+      margin-bottom: 28px;
     }
 
     .summary-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 26px 22px;
+      gap: 20px 18px;
       background: #182033;
       border: 1px solid rgba(59, 91, 170, 0.65);
-      border-radius: 22px;
-      padding: 22px;
+      border-radius: 18px;
+      padding: 18px;
     }
 
     .summary-grid span {
       display: block;
       color: #9ca3af;
-      font-size: 16px;
-      margin-bottom: 8px;
+      font-size: 14px;
+      margin-bottom: 6px;
     }
 
     .summary-grid strong {
       display: block;
       color: #ffffff;
-      font-size: 28px;
+      font-size: 24px;
       line-height: 1.1;
       letter-spacing: -0.035em;
     }
@@ -340,35 +334,35 @@
     .summary-divider {
       height: 1px;
       background: #3a3a3a;
-      margin: 18px 0;
+      margin: 16px 0;
     }
 
     .summary-card p {
       margin: 0;
       color: #8f8f8f;
-      font-size: 15px;
+      font-size: 13px;
       line-height: 1.35;
     }
 
     .app-screen h4 {
-      margin: 0 0 22px;
+      margin: 0 0 18px;
       color: #a1a1aa;
-      font-size: 26px;
+      font-size: 22px;
       letter-spacing: -0.04em;
     }
 
     .payment-card {
       background: #1f1f1f;
-      border-radius: 28px;
-      padding: 20px;
+      border-radius: 24px;
+      padding: 18px;
     }
 
     .payment-row {
       display: flex;
       justify-content: space-between;
-      gap: 18px;
-      padding: 0 0 20px;
-      margin-bottom: 20px;
+      gap: 16px;
+      padding: 0 0 16px;
+      margin-bottom: 16px;
       border-bottom: 1px solid #3a3a3a;
     }
 
@@ -381,22 +375,22 @@
     .payment-row strong {
       display: block;
       color: #ffffff;
-      font-size: 21px;
+      font-size: 18px;
       line-height: 1.15;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .payment-row span {
       display: block;
       color: #9ca3af;
-      font-size: 18px;
+      font-size: 15px;
       line-height: 1.2;
     }
 
     .payment-row p {
       margin: 0;
       color: #9ca3af;
-      font-size: 18px;
+      font-size: 15px;
       white-space: nowrap;
     }
 
@@ -536,7 +530,8 @@
       }
 
       .app-preview-card {
-        max-width: 430px;
+        width: 390px;
+        max-width: 100%;
         margin-left: 0;
       }
     }
@@ -554,7 +549,7 @@
       }
 
       .hero {
-        padding: 70px 0 56px;
+        padding: 70px 0 48px;
       }
 
       .hero h1 {
@@ -583,34 +578,35 @@
       }
 
       .app-preview-card {
-        max-width: 100%;
-        padding: 14px;
+        width: 100%;
+        max-width: 390px;
+        padding: 12px;
       }
 
       .app-screen {
-        min-height: 650px;
-        padding: 22px 16px 24px;
+        height: 690px;
+        padding: 20px 16px 22px;
       }
 
       .currency-pill {
-        font-size: 16px;
+        font-size: 15px;
       }
 
       .app-title-block h3 {
-        font-size: 36px;
+        font-size: 30px;
       }
 
       .summary-grid strong {
-        font-size: 24px;
+        font-size: 22px;
       }
 
       .payment-row strong {
-        font-size: 19px;
+        font-size: 17px;
       }
 
       .payment-row span,
       .payment-row p {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   </style>
@@ -759,7 +755,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="alt">
       <div class="container">
         <h2>Designed for simple subscription management.</h2>
 
@@ -820,7 +816,7 @@
       </div>
     </section>
 
-    <section class="alt">
+    <section>
       <div class="container">
         <div class="trust-card">
           <div>
@@ -843,7 +839,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="alt">
       <div class="container">
         <h2>Current Status</h2>
 
