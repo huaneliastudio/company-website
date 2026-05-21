@@ -165,21 +165,21 @@
     }
 
     .app-preview-card {
-      width: 390px;
+      width: 370px;
       max-width: 100%;
       margin-left: auto;
-      padding: 13px;
+      padding: 12px;
       border-radius: 38px;
       background: linear-gradient(180deg, #050505, #111111);
-      border: 1px solid rgba(15, 23, 42, 0.16);
+      border: 1px solid rgba(15, 23, 42, 0.18);
       box-shadow:
-        0 24px 60px rgba(15, 23, 42, 0.22),
+        0 24px 60px rgba(15, 23, 42, 0.24),
         inset 0 0 0 1px rgba(255, 255, 255, 0.04);
       overflow: hidden;
     }
 
     .app-screen {
-      height: 740px;
+      height: 720px;
       border-radius: 30px;
       background: #000000;
       color: #ffffff;
@@ -188,14 +188,14 @@
       border: 1px solid rgba(255, 255, 255, 0.05);
     }
 
-    .status-bar {
+    .phone-status-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
       color: #ffffff;
       font-size: 16px;
       font-weight: 750;
-      margin-bottom: 22px;
+      margin-bottom: 24px;
     }
 
     .status-icons {
@@ -257,103 +257,118 @@
       margin: 2px;
     }
 
-    .currency-pill {
+    .app-toolbar {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
       gap: 12px;
+      margin-bottom: 26px;
+    }
+
+    .toolbar-icon {
+      color: #f8fafc;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .currency-chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 14px;
+      border-radius: 999px;
       background: #171717;
       border: 1px solid #303030;
-      border-radius: 999px;
-      padding: 10px 16px;
-      margin: 0 0 26px;
       color: #f5f5f5;
-      font-size: 16px;
+      font-size: 15px;
+      font-weight: 600;
       line-height: 1;
     }
 
-    .crown {
-      font-size: 20px;
-      line-height: 1;
+    .toolbar-plus {
       color: #f8fafc;
-    }
-
-    .plus {
-      font-size: 30px;
-      line-height: 1;
+      font-size: 28px;
       font-weight: 300;
+      line-height: 1;
     }
 
-    .app-title-block h3 {
+    .dashboard-title h3 {
       margin: 0;
-      font-size: 32px;
+      font-size: 40px;
       line-height: 1;
       letter-spacing: -0.06em;
       color: #ffffff;
     }
 
-    .app-title-block p {
-      margin: 12px 0 28px;
+    .dashboard-title p {
+      margin: 12px 0 26px;
       color: #9ca3af;
       font-size: 16px;
       font-weight: 500;
     }
 
-    .summary-card {
+    .stats-outer-card {
       background: #1f1f1f;
-      border-radius: 24px;
+      border-radius: 28px;
       padding: 18px;
-      margin-bottom: 28px;
+      margin-bottom: 34px;
     }
 
-    .summary-grid {
+    .stats-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px 18px;
-      background: #182033;
+      background: rgba(24, 32, 51, 0.92);
       border: 1px solid rgba(59, 91, 170, 0.65);
       border-radius: 18px;
       padding: 18px;
     }
 
-    .summary-grid span {
+    .metric-label {
       display: block;
       color: #9ca3af;
       font-size: 14px;
       margin-bottom: 6px;
+      line-height: 1.3;
     }
 
-    .summary-grid strong {
+    .metric-value {
       display: block;
       color: #ffffff;
       font-size: 24px;
+      font-weight: 700;
       line-height: 1.1;
       letter-spacing: -0.035em;
     }
 
-    .summary-divider {
+    .metric-value.small {
+      font-size: 22px;
+    }
+
+    .stats-divider {
       height: 1px;
       background: #3a3a3a;
       margin: 16px 0;
     }
 
-    .summary-card p {
+    .exchange-note {
       margin: 0;
       color: #8f8f8f;
       font-size: 13px;
       line-height: 1.35;
     }
 
-    .app-screen h4 {
+    .payments-title {
       margin: 0 0 18px;
       color: #a1a1aa;
-      font-size: 22px;
+      font-size: 24px;
+      font-weight: 750;
       letter-spacing: -0.04em;
     }
 
     .payment-card {
       background: #1f1f1f;
-      border-radius: 24px;
+      border-radius: 26px;
       padding: 18px;
     }
 
@@ -395,7 +410,7 @@
     }
 
     section {
-      padding: 66px 0;
+      padding: 58px 0;
       background: #ffffff;
     }
 
@@ -530,7 +545,7 @@
       }
 
       .app-preview-card {
-        width: 390px;
+        width: 370px;
         max-width: 100%;
         margin-left: 0;
       }
@@ -579,7 +594,7 @@
 
       .app-preview-card {
         width: 100%;
-        max-width: 390px;
+        max-width: 370px;
         padding: 12px;
       }
 
@@ -588,16 +603,16 @@
         padding: 20px 16px 22px;
       }
 
-      .currency-pill {
-        font-size: 15px;
+      .dashboard-title h3 {
+        font-size: 36px;
       }
 
-      .app-title-block h3 {
-        font-size: 30px;
-      }
-
-      .summary-grid strong {
+      .metric-value {
         font-size: 22px;
+      }
+
+      .metric-value.small {
+        font-size: 20px;
       }
 
       .payment-row strong {
@@ -638,7 +653,7 @@
 
           <span class="status-tag">In Development</span>
 
-          <h1>SubTrack+</h1>
+          <h1>SubTrack</h1>
 
           <h2>Stay on top of your subscriptions.</h2>
 
@@ -657,7 +672,7 @@
 
         <div class="app-preview-card" aria-label="SubTrack app preview illustration">
           <div class="app-screen">
-            <div class="status-bar">
+            <div class="phone-status-bar">
               <span>1:59</span>
 
               <span class="status-icons" aria-hidden="true">
@@ -674,48 +689,48 @@
               </span>
             </div>
 
-            <div class="currency-pill">
-              <span class="crown">♕</span>
-              <span>SGD · Singapore Dollar</span>
-              <span class="plus">+</span>
+            <div class="app-toolbar">
+              <span class="toolbar-icon">♕</span>
+              <span class="currency-chip">SGD · Singapore Dollar</span>
+              <span class="toolbar-plus">+</span>
             </div>
 
-            <div class="app-title-block">
+            <div class="dashboard-title">
               <h3>SubTrack</h3>
               <p>🔒 Track your subscriptions privately</p>
             </div>
 
-            <div class="summary-card">
-              <div class="summary-grid">
+            <div class="stats-outer-card">
+              <div class="stats-grid">
                 <div>
-                  <span>Monthly spend</span>
-                  <strong>$76.83</strong>
+                  <span class="metric-label">Monthly spend</span>
+                  <strong class="metric-value">$76.83</strong>
                 </div>
 
                 <div>
-                  <span>Projected yearly spend</span>
-                  <strong>$921.95</strong>
+                  <span class="metric-label">Projected yearly spend</span>
+                  <strong class="metric-value">$921.95</strong>
                 </div>
 
                 <div>
-                  <span>Active subscriptions</span>
-                  <strong>4</strong>
+                  <span class="metric-label">Active subscriptions</span>
+                  <strong class="metric-value">4</strong>
                 </div>
 
                 <div>
-                  <span>Next payment</span>
-                  <strong>10 Jun 2026</strong>
+                  <span class="metric-label">Next payment</span>
+                  <strong class="metric-value small">10 Jun 2026</strong>
                 </div>
               </div>
 
-              <div class="summary-divider"></div>
+              <div class="stats-divider"></div>
 
-              <p>
+              <p class="exchange-note">
                 Converted using exchange rates. Last updated: 22 May 2026 at 12:24 AM
               </p>
             </div>
 
-            <h4>Upcoming Payments</h4>
+            <h4 class="payments-title">Upcoming Payments</h4>
 
             <div class="payment-card">
               <div class="payment-row">
