@@ -11,7 +11,7 @@ body {
 }
 
 .page-hero.left {
-  padding: 74px 0 46px;
+  padding: 56px 0 28px;
   text-align: left;
   background:
     radial-gradient(circle at top, rgba(219, 234, 254, 0.75), transparent 38%),
@@ -70,6 +70,10 @@ main.legal-main {
 section {
   padding: 54px 0;
   background: #ffffff;
+}
+
+.legal-main section {
+  padding: 36px 0;
 }
 
 section.alt {
@@ -258,6 +262,10 @@ a {
     padding: 58px 0 38px;
   }
 
+  .page-hero.left {
+    padding: 44px 0 24px;
+  }
+
   .page-hero h1,
   h1 {
     font-size: 38px;
@@ -273,6 +281,10 @@ a {
 
   section {
     padding: 42px 0;
+  }
+
+  .legal-main section {
+    padding: 32px 0;
   }
 
   .content-grid,
