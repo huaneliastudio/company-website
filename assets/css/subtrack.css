@@ -239,4 +239,11 @@ h2 {
   .iphone-frame img {
     border-radius: 28px;
   }
+  
+  .subtrack-premium-section {
+  padding: 96px 0;
+  background: linear-gradient(180deg, #F5F9FF 0%, #EAF3FF 100%);
+  border-top: 1px solid #DDE8F7;
+  border-bottom: 1px solid #DDE8F7;
+  }
 }
